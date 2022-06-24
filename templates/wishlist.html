@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="heading">
+    <h1 style="font-size:8vw"> Gym Essentials </h1>
+</div>
+
+
+
+<div class="title">
+    <h1>Wish List Items</h1>
+</div>
+<div class="list-text">
+<div class="button1 ">
+    <button class="btn-lg btn btn-outline-primary" onclick="taskHider()">Show/Hide Wishlist</button>
+</div>
+
+<div class="wishlist">
+    <ul id="list"></ul>
+</div>
+
+
+<div class="enter-text ">
+    <input type="text" placeholder="Enter Item..." id="candidate" class="form-control form-wishlist" />
+</div>
+
+
+<div class="button2">
+    <button id="addlist" class="btn-lg btn btn-outline-success" onclick="addItem()" class="buttonClass">
+        Add item</button>
+    <button id="removelist" class="btn-lg btn btn-outline-danger" onclick="removeItem()" class="buttonClass">
+        Remove item</button>
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style class="background-home">
+    body {
+    background-image: url('static/images/pexels.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100%;
+}
+    </style>
+
+
+
+<div class="heading">
+    <h1 style="font-size:8vw"> Gym Essentials </h1> 
+</div>
+
+<div class="text1-div" >
+    <P  class="text1">
+        At Gym Essentials we are dedicated to providing you with all your gym needs. We strive to supply you with only the best of gym equipment. Here you will be able to find everything you have been looking for such as protein, pre-work out, dumbells, pull up bar and much more.
+    </P>
+</div>
+
+<div class="container">
+    <div class="slider">
+        <div class="slider__slides">
+            <div class="slider__slide active"> <img id="img1" src=static/images/protein.jpg alt="Blue rassberry protien"></div>
+            <div class="slider__slide"><img id="img2" src=static/images/green.png alt="Mojito protien"></div>
+            <div class="slider__slide"><img id="img1" src=static/images/red.jpg alt="Strawberry protien"></div>
+            <div class="slider__slide"><img id="img1" src=static/images/orange.jpg alt="Orange and mango protien"></div>
+        </div>
+        <div id="nav-button--prev" class="slider__nav-button"></div>
+        <div id="nav-button--next" class="slider__nav-button"></div>
+        <div class="slider__navlink active"></div>
+        <div class="slider__navlink"></div>
+        <div class="slider__navlink"></div>
+        <div class="slider__navlink"></div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}
